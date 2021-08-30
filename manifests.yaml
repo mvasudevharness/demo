@@ -4,6 +4,9 @@ metadata:
   name: hello-world
   labels:
     app: hello-world
+kind: namespace
+metadata:
+  name: mv-hello-world
 spec:
   containers:
   - name: hello-world
