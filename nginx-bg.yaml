@@ -1,14 +1,13 @@
-apiVersion: apps/v1
+apiVersion: v1
+
 kind: Service
 metadata:
   name: nginx-svc
-  annotations:
-    harness.io/primary-service: "true"
 spec:
-  type: ClusterIP
   ports:
   - port: 8080
     protocol: TCP
+    targetPort: 9376
   selector:
     app: nginx-bg
     
