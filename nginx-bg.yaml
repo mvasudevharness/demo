@@ -9,7 +9,6 @@ spec:
     protocol: TCP
   selector:
     app: nginx-bg
- --
     
 apiVersion: apps/v1
 kind: Deployment
