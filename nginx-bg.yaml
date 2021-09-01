@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Service
 metadata:
   name: nginx-svc
+  annotations:
+    harness.io/primary-service: "true"
 spec:
   type: ClusterIP
   ports:
@@ -10,6 +12,20 @@ spec:
   selector:
     app: nginx-bg
     
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: nginx-svc-stg
+  annotations:
+    harness.io/stage-service: "true"
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    app: nginx-bg
+        
 apiVersion: apps/v1
 kind: Deployment
 metadata:
