@@ -6,7 +6,6 @@ spec:
   type: ClusterIP
   ports:
   - port: 8080
-    targetPort: {{.Values.serviceTargetPort}}
     protocol: TCP
   selector:
     app: nginx-bg
