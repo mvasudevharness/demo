@@ -18,5 +18,5 @@ spec:
       - name: hello-world
         image: hello-world-app:latest
         ports:
-        -name: nodejs-port
-        - containerPort: 80
+        - name: nodejs-port
+          containerPort: 80
