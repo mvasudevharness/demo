@@ -19,7 +19,7 @@ spec:
         image: wardviaene/k8s-demo:latest
         ports:
         - name: nodejs-port
-          containerPort: 8080
+          containerPort: 80
 ---
 apiVersion: v1
 kind: Service
