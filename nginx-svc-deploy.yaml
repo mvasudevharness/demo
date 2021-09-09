@@ -16,14 +16,14 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: <+artifact.image>
         ports:
         - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-mv
+  name: <+service.name>
 spec:
   type: LoadBalancer
   ports:
