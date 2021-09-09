@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: mvasudev23/hello-world-app:latest
+        image: wardviaene/k8s-demo:latest
         ports:
         - name: nodejs-port
           containerPort: 8080
