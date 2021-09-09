@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: library/nginx:latest
+        image: {{.Values.image}}
         ports:
         - containerPort: 80
 ---
