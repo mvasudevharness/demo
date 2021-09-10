@@ -1,3 +1,4 @@
 name: nginx
 image: <+artifact.image>
 namespace: <+infra.namespace>
+servicename: <+service.name>
